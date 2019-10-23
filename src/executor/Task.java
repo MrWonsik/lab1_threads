@@ -13,11 +13,12 @@ public class Task implements Runnable {
     @Override
     public void run() {
 
-        System.out.println(name);
+
         try {
             sleep(1000);
+            System.out.println(name);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println("Przerwano!");
         }
         Thread.yield();
     }
