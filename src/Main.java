@@ -28,28 +28,28 @@ public class Main {
             e.printStackTrace();
         }
 
-        System.out.println("PULE WATKOW!");
-
-        Method[] methods = ThreadPoolExecutor.class.getDeclaredMethods();
-        for (Method method : methods) {
-            String name = method.getName();
-            if (name.startsWith("get")) {
-                Object result = null;
-                try {
-                    result = method.invoke(exec);
-                } catch (Exception e) {
-                    System.out.println("Nie moge wywołać metody: " + name + " !");
-                }
-                System.out.println(name + " = " + result);
-            }
-        }
+//        System.out.println("PULE WATKOW!");
+//
+//        Method[] methods = ThreadPoolExecutor.class.getDeclaredMethods();
+//        for (Method method : methods) {
+//            String name = method.getName();
+//            if (name.startsWith("get")) {
+//                Object result = null;
+//                try {
+//                    result = method.invoke(exec);
+//                } catch (Exception e) {
+//                    System.out.println("Nie moge wywołać metody: " + name + " !");
+//                }
+//                System.out.println(name + " = " + result);
+//            }
+//        }
 
         ((ThreadPoolExecutor) exec).setMaximumPoolSize(8);
         ((ThreadPoolExecutor) exec).setCorePoolSize(8);
 
-        System.out.println(futureArrayList.get(0).cancel(true));
-        System.out.println(futureArrayList.get(1).cancel(false));
-        System.out.println(futureArrayList.get(7).cancel(true));
+        futureArrayList.get(0).cancel(true);
+        futureArrayList.get(1).cancel(false);
+        futureArrayList.get(7).cancel(true);
 
         exec.shutdown();
 
@@ -64,18 +64,18 @@ public class Main {
         System.out.println("Executor servise isTerminated: " + exec.isTerminated());
         System.out.println("Uruchomiono zadań: " + futureArrayList.size());
 
-        for (Method method : methods) {
-            String name = method.getName();
-            if (name.startsWith("get")) {
-                Object result = null;
-                try {
-                    result = method.invoke(exec);
-                } catch (Exception e) {
-                    System.out.println("Nie moge wywołać metody: " + name + " !");
-                }
-                System.out.println(name + "=" + result);
-            }
-        }
+//        for (Method method : methods) {
+//            String name = method.getName();
+//            if (name.startsWith("get")) {
+//                Object result = null;
+//                try {
+//                    result = method.invoke(exec);
+//                } catch (Exception e) {
+//                    System.out.println("Nie moge wywołać metody: " + name + " !");
+//                }
+//                System.out.println(name + "=" + result);
+//            }
+//        }
     }
 
 

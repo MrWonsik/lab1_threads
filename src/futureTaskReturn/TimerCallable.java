@@ -25,20 +25,20 @@ public class TimerCallable implements Callable<Integer> {
         Integer k = 0;
         for (int i = 0; i < 4; i++) {
             if (Thread.currentThread().isInterrupted()) {
-                System.out.println(this + " interrupted!");
+                //System.out.println(this + " interrupted!");
                 return null;
             }
 
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
-                System.out.println(this + " sleep() interrupted!");
+                //System.out.println(this + " sleep() interrupted!");
                 return null;
             }
 
             k += value * i;
         }
-        System.out.println(this + " -> Wynik końcowy " + k);
+        //System.out.println(this + " -> Wynik końcowy " + k);
         return k;
     }
 }
