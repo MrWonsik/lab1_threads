@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/exc1/ReaderThread.java" line="7" />
+    <bookmark url="file://$PROJECT_DIR$/src/exc1/ReaderThread.java" line="10" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="658c63db-6c70-4ff5-a93a-d41fd14af7cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exc1/Exc1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exc1/Reader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exc1/ReaderThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exc1/someFile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exc1/Exc1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exc1/Exc1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exc1/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exc1/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exc1/ReaderThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exc1/ReaderThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exc1/someFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/exc1/someFile.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/exc1/Exc1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="151">
+              <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/exc1/someFile.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3196">
-              <caret line="188" column="42" lean-forward="true" selection-start-line="188" selection-start-column="42" selection-end-line="188" selection-end-column="42" />
+            <state relative-caret-position="310">
+              <caret line="187" column="58" selection-start-line="187" selection-start-column="58" selection-end-line="187" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -47,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/exc1/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" column="69" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="69" />
+            <state relative-caret-position="168">
+              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1231#1232#0" expanded="true" />
@@ -61,8 +60,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/exc1/ReaderThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="66">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,10 +108,10 @@
         <option value="$PROJECT_DIR$/src/threadSynch/Worker.java" />
         <option value="$PROJECT_DIR$/src/rygle/TestLock.java" />
         <option value="$PROJECT_DIR$/src/rygle/TabString.java" />
+        <option value="$PROJECT_DIR$/src/exc1/Reader.java" />
+        <option value="$PROJECT_DIR$/src/exc1/ReaderThread.java" />
         <option value="$PROJECT_DIR$/src/exc1/someFile.txt" />
         <option value="$PROJECT_DIR$/src/exc1/Exc1.java" />
-        <option value="$PROJECT_DIR$/src/exc1/ReaderThread.java" />
-        <option value="$PROJECT_DIR$/src/exc1/Reader.java" />
       </list>
     </option>
   </component>
@@ -188,7 +192,7 @@
     <configuration name="Exc1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exc1.Exc1" />
       <module name="lab1" />
-      <option name="PROGRAM_PARAMETERS" value="2" />
+      <option name="PROGRAM_PARAMETERS" value="5" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="exc1.*" />
@@ -278,12 +282,12 @@
       <workItem from="1571739238845" duration="2240000" />
       <workItem from="1571816093363" duration="3716000" />
       <workItem from="1571844903845" duration="6947000" />
-      <workItem from="1572186124307" duration="6841000" />
+      <workItem from="1572186124307" duration="7710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19744000" />
+    <option name="totallyTimeSpent" value="20613000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1974" y="122" width="1320" height="784" extended-state="6" />
@@ -308,7 +312,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32981783" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32917964" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32872504" />
       <window_info anchor="bottom" id="Log Viewer" order="13" />
       <window_info anchor="bottom" id="Anonymous Apex" order="14" weight="0.32917964" />
       <window_info anchor="bottom" id="SOQL Query" order="15" />
@@ -513,24 +517,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exc1/someFile.txt">
+    <entry file="file://$PROJECT_DIR$/src/exc1/ReaderThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3196">
-          <caret line="188" column="42" lean-forward="true" selection-start-line="188" selection-start-column="42" selection-end-line="188" selection-end-column="42" />
+        <state relative-caret-position="66">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exc1/ReaderThread.java">
+    <entry file="file://$PROJECT_DIR$/src/exc1/someFile.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="310">
+          <caret line="187" column="58" selection-start-line="187" selection-start-column="58" selection-end-line="187" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/exc1/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="69" lean-forward="true" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="69" />
+        <state relative-caret-position="168">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1231#1232#0" expanded="true" />
@@ -541,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/exc1/Exc1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state relative-caret-position="151">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

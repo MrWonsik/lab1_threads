@@ -1,17 +1,19 @@
 package exc1;
 
 
-public class ReaderThread extends Thread {
+import java.util.List;
+import java.util.concurrent.Callable;
+
+public class ReaderThread implements Callable<List<String>> {
 
     private Reader reader;
 
     public ReaderThread(Reader reader){
         this.reader = reader;
-        start();
     }
 
-    public void run(){
-            reader.read();
-
+    @Override
+    public List<String> call() throws Exception {
+        return reader.read();
     }
 }

@@ -1,9 +1,8 @@
 package exc1;
 
 import java.util.ArrayList;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.List;
+import java.util.concurrent.*;
 
 public class Exc1 {
     public static void main(String[] args) {
@@ -11,6 +10,8 @@ public class Exc1 {
         ExecutorService executor = Executors.newFixedThreadPool(threadCount);
 
         ArrayList<ReaderThread> readerThreads = new ArrayList<>();
+        ArrayList<Future<List<String>>> readerResults = new ArrayList<>();
+
         Reader reader = new Reader("./src/exc1/someFile.txt");
         for (int i = 0; i < threadCount; i++) {
             readerThreads.add(new ReaderThread(reader));
@@ -20,19 +21,29 @@ public class Exc1 {
 
         while(!reader.isEOF()) {
             for(ReaderThread readerThread : readerThreads){
-                executor.execute(readerThread);
+                readerResults.add(executor.submit(readerThread));
             }
             try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+                Thread.sleep(100);
+            } catch (InterruptedException e1) {
+                e1.printStackTrace();
             }
         }
         executor.shutdown();
         try {
-            executor.awaitTermination(100, TimeUnit.SECONDS);
+            executor.awaitTermination( 100, TimeUnit.SECONDS);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }
+
+        for(Future<List<String>> result : readerResults) {
+            try {
+                System.out.println(result.get());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
         }
 
 

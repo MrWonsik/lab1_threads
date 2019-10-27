@@ -1,6 +1,8 @@
 package exc1;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Reader {
@@ -17,7 +19,8 @@ public class Reader {
         }
     }
 
-    public void read() {
+    public List<String> read() {
+        List<String> stringsList = new ArrayList<>();
         lock.lock();
         try {
             for (int i = 0; i < 2; i++) {
@@ -26,15 +29,17 @@ public class Reader {
                 if(line == null){
                     endOfFile = true;
                 } else {
-                    System.out.print(Thread.currentThread().getName() + ": ");
-                    System.out.println(line);
+                    stringsList.add(Thread.currentThread() + ": " + line);
                 }
             }
+            return stringsList;
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             lock.unlock();
         }
+
+        return stringsList;
     }
 
     public void closeFile() {
