@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Reader {
 
-    boolean endOfFile = false;
+    private boolean endOfFile = false;
     private BufferedReader fileReader;
     private ReentrantLock lock = new ReentrantLock();
 
@@ -19,7 +19,7 @@ public class Reader {
         }
     }
 
-    public List<String> read() {
+    public synchronized List<String> read() {
         List<String> stringsList = new ArrayList<>();
         lock.lock();
         try {

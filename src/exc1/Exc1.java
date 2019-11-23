@@ -31,10 +31,12 @@ public class Exc1 {
         }
         executor.shutdown();
         try {
-            executor.awaitTermination( 100, TimeUnit.SECONDS);
+            executor.awaitTermination( 1000, TimeUnit.SECONDS);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+        reader.closeFile();
 
         for(Future<List<String>> result : readerResults) {
             try {
